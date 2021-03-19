@@ -54,7 +54,7 @@ exit 0
 else
 if [ "$answer" = "2" ]; then
 printf "\033[32mINFO \033[0m 正在从Github拉取博客源码 ...\n"
-git clone https://github.com/xiaobaisky/myblog.git Hexo # 记得替换仓库URL为自己的源码存放仓库
+git clone https://hub.fastgit.org/xiaobaisky/myblog.git Hexo # 记得替换仓库URL为自己的源码存放仓库
 cd Hexo
 printf "\033[32mINFO \033[0m 恢复完成！\n"
 printf "\033[32mINFO \033[0m 请将本脚本文件放入Hexo文件夹以继续使用其他功能！\n"
