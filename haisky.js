@@ -66,10 +66,10 @@ function coverColor() {
         paletteSize: 30,
         exclude: ["rgb(255,255,255)", "rgb(0,0,0)", "rgb(254,254,254)"],
         success: function (t) {
-            document.styleSheets[0].addRule(":root", "--wds-main:" + t.dominant + "!important"), document.getElementById("coverdiv").classList.add("loaded")
+            document.styleSheets[0].addRule(":root", "--hai-main:" + t.dominant + "!important"), document.getElementById("coverdiv").classList.add("loaded")
         },
         error: function () {
-            document.styleSheets[0].addRule(":root", "--wds-main: #057748 !important")
+            document.styleSheets[0].addRule(":root", "--hai-main: #057748 !important")
         }
-    }) : document.styleSheets[0].addRule(":root", "--wds-main: #057748 !important")
+    }) : document.styleSheets[0].addRule(":root", "--hai-main: #057748 !important")
 }
