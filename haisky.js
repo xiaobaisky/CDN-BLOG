@@ -1,5 +1,3 @@
-"use strict";
-
 categoriesBarActive()
 topCategoriesBarScroll()
 
@@ -59,17 +57,3 @@ setInterval(function() {
 
     next.setAttribute('data-show', '')
 }, 2000)
-
-function coverColor() {
-    var t = null === (t = document.getElementById("post-cover")) || void 0 === t ? void 0 : t.src;
-    void 0 !== t ? RGBaster.colors(t, {
-        paletteSize: 30,
-        exclude: ["rgb(255,255,255)", "rgb(0,0,0)", "rgb(254,254,254)"],
-        success: function (t) {
-            document.styleSheets[0].addRule(":root", "--hai-main:" + t.dominant + "!important"), document.getElementById("coverdiv").classList.add("loaded")
-        },
-        error: function () {
-            document.styleSheets[0].addRule(":root", "--hai-main: #057748 !important")
-        }
-    }) : document.styleSheets[0].addRule(":root", "--hai-main: #057748 !important")
-}
